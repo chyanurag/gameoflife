@@ -125,8 +125,6 @@ def draw_cells(cells, win):
         for col in range(1, len(cells[row]) - 1):
             if cells[row][col] == 1:
                 pg.draw.rect(win, 'white', pg.Rect(row*10, col*10, 10, 10))
-            else:
-                pg.draw.rect(win, 'black', pg.Rect(row*10, col*10, 10, 10))
 
 
 last = pg.time.get_ticks()
